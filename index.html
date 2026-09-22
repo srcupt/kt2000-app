@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KT2000 — Chính sách bảo mật</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --line: #d1d9e0; --accent: #0969da; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --line: #30363d; --accent: #4493f8; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 20px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .muted { color: var(--muted); font-size: 14px; }
+  a { color: var(--accent); }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>KT2000</h1>
+  <p class="muted">Phần mềm kế toán nội bộ · Internal accounting software</p>
+
+  <p>KT2000 là phần mềm kế toán dùng nội bộ cho các công ty khách hàng của chúng tôi.
+     Tính năng <b>Kết nối Gmail</b> giúp tự động đọc <b>thư sao kê tài khoản do ngân hàng gửi</b>
+     để nhập giao dịch vào sổ kế toán, thay cho việc tải file và nhập tay.</p>
+  <p class="muted">KT2000 is an internal accounting application. Its “Connect Gmail” feature reads
+     bank statement emails sent by banks, so transactions can be imported into the company's books
+     instead of being downloaded and typed in by hand.</p>
+
+  <h2 id="privacy">Chính sách bảo mật · Privacy policy</h2>
+  <p class="muted">Cập nhật / Last updated: 22/09/2026</p>
+
+  <h3>1. Dữ liệu chúng tôi truy cập</h3>
+  <ul>
+    <li>Chỉ khi chủ tài khoản Gmail (hoặc người được họ uỷ quyền) chủ động bấm “Cho phép”.</li>
+    <li>Quyền duy nhất xin cấp là <b>chỉ đọc</b> (<code>gmail.readonly</code>).
+        KT2000 <b>không gửi, không xoá, không sửa</b> bất kỳ thư nào.</li>
+    <li>KT2000 chỉ xử lý <b>thư sao kê của ngân hàng</b> (lọc theo người gửi là ngân hàng)
+        cùng file đính kèm và mật khẩu mở file nằm trong thư đó. Các thư khác không được đọc nội dung,
+        không được lưu.</li>
+  </ul>
+
+  <h3>2. Cách dùng dữ liệu</h3>
+  <ul>
+    <li>Dữ liệu sao kê chỉ dùng để ghi giao dịch ngân hàng vào sổ kế toán của chính công ty sở hữu tài khoản.</li>
+    <li>Dữ liệu được lưu trên máy chủ nội bộ của chúng tôi, chỉ nhân viên kế toán phụ trách công ty đó truy cập được.</li>
+    <li>Chúng tôi <b>không bán, không chia sẻ</b> dữ liệu cho bên thứ ba, không dùng cho quảng cáo,
+        và không dùng để huấn luyện mô hình AI.</li>
+  </ul>
+
+  <h3>3. Thu hồi quyền truy cập</h3>
+  <p>Chủ tài khoản có thể ngừng bất cứ lúc nào: vào
+     <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+     và xoá quyền của KT2000. Đổi mật khẩu Gmail cũng tự động thu hồi quyền.
+     Sau khi thu hồi, KT2000 không đọc thêm được thư nào. Nếu cần xoá cả dữ liệu sao kê đã nhập,
+     vui lòng liên hệ theo địa chỉ bên dưới.</p>
+
+  <h3>4. Tuân thủ chính sách của Google</h3>
+  <p>Việc KT2000 sử dụng và chuyển giao thông tin nhận được từ Google API tuân thủ
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+     bao gồm các yêu cầu Limited Use.</p>
+  <p class="muted">KT2000's use and transfer of information received from Google APIs adheres to the
+     Google API Services User Data Policy, including the Limited Use requirements. Access is read-only,
+     limited to bank statement emails, never sold or shared, and can be revoked at any time at
+     myaccount.google.com/permissions.</p>
+
+  <h2 id="contact">Liên hệ · Contact</h2>
+  <p>Email: <a href="mailto:ngocdiepcongty@gmail.com">ngocdiepcongty@gmail.com</a></p>
+</main>
+</body>
+</html>
